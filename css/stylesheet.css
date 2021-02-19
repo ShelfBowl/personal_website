@@ -5,3 +5,8 @@ h1{
 body{
     background-color: lightgrey;
 }
+
+nav{
+    background-color: lightblue;
+    text-align: center;
+}
