@@ -1,18 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 h1{
-    color: navy;
+    color: #334259;
+}
+
+h2{
+    font-size: 30px;
 }
 
 body{
-    background-color: lightgrey;
+    background-color: #edddd0;
+}
+
+header, footer{
+    background-color: #a6cad4;
+    text-align: center;
 }
 
 nav{
-    background-color: lightblue;
-    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
 }
+
+img{  
+    max-width: 100%;
+    height: auto;
+}  
 
 .index h1{
     font-family: 'Montserrat', sans-serif;
 }
+
+.grid-item1 { grid-area: para1; }
+.grid-item2 { grid-area: image; }
+.grid-item3 { grid-area: para2; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'para1 para1 para1 image'
+      'para1 para1 para1 image'
+      'para2 para2 para2 empty';
+  }
